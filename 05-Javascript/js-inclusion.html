@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript Inclusion</title>
+
+  <!-- Browser will run this script first, delaying the html -->
+  <script type="text/javascript" src="js/js-inclusion-1.js"></script>
+</head>
+<body>
+  <h1>Javascript Inclusion</h1>
+
+  <strong>Hi!</strong>
+
+  <!-- Here, the page already loaded and is visible, and then we have to wait for JS to load and execute. -->
+
+  <script type="text/javascript">
+    console.log('Inline JS code');
+  </script>
+
+  <script type="text/javascript" src="js/js-inclusion-2.js"></script>
+</body>
+</html>

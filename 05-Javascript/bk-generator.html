@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Generator</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bk-generator.css">
+</head>
+<body id="gradient">
+  <h1>Background Generator</h1>
+
+  <input class="color1" type="color" name="color1" value="#00ff00">
+  <input class="color2" type="color" name="color2" value="#ff0000">
+
+  <button class="random">Use Random colors</button>
+
+  <!--
+    We can set the callback for the input event here, but this way, we can only call one function.
+    Also, we have separate of concern to be applied here.
+  -->
+  <!--input class="color2" type="color" name="color2" value="#ff0000" oninput="setGradient()"-->
+
+  <h2>Current CSS Background</h2>
+  <h3></h3>
+
+  <script type="text/javascript" src="js/bk-generator.js"></script>
+</body>
+</html>

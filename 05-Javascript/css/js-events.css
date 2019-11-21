@@ -1,0 +1,25 @@
+/*
+ *  JS DOM Events sample (js-events.html).
+ *
+ */
+
+li 
+{
+  clear:both;
+}
+
+li:hover 
+{
+  cursor:pointer;
+}
+
+li > button
+{
+  margin-right:10px;
+  float:left;
+}
+
+.done
+{
+  color:green;
+}

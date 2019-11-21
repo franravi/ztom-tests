@@ -1,0 +1,155 @@
+/*
+ *  CSS Grid Case 5 sample (CSS-Grid-5.html).
+ *
+ */
+
+/*
+ *  Generic html elements.
+ */
+html  {
+  font-size:16px;
+}
+html,
+body  {
+  margin:0px;
+  padding:0px auto;
+  color:#ffffff;
+  font-family:Arial;
+}
+@media (max-width: 575px) {
+  html  {
+    font-size:20px;
+  }
+}
+
+a {
+  color:#ffffff;
+}
+a:hover {
+  color:#ffffff;
+  text-decoration:none;
+}
+
+
+/*
+ *  Custom areas that apply to any location.
+ */
+@media only screen  {
+  .container  {
+    max-width:100%;
+    padding-left:0px;
+    padding-right:0px;
+  }
+}
+
+.zone {
+  text-align: center;
+  transition: all 0.3s linear;
+  padding:20px;
+}
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+/*
+ *  Header section
+ *
+#header-nav {}
+ */
+#header-nav .row  {
+  white-space:nowrap;
+}
+#header-nav .box:hover  {
+  cursor:pointer;
+  
+    -webkit-box-shadow:0 9px 10px -10px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 9px 10px -10px rgba(0,0,0,0.8);
+    -o-box-shadow:0 9px 10px -10px rgba(0,0,0,0.8);
+  box-shadow:0 9px 10px -10px rgba(0,0,0,0.8);
+}
+.sticky {
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+
+/*
+ *  Cover section
+ *  We adjust cover to 40% the viewport height, making it vertically responsive.
+ *
+ */
+#cover  {
+  margin-top:64px;  /* Area taken for sticky header nav */
+}
+#cover > .container {
+  height:40vh;
+}
+img.cover {
+  height:100%;
+}
+
+
+/*
+ *  Main area section, used for a Project Grid.
+ *
+#project-grid {}
+ */
+
+#project-grid > .container  {
+  display:grid;
+  grid-gap:20px;
+}
+@media (max-width: 575px) {
+  #project-grid > .container  {
+    grid-template-columns:100% !important;
+  }
+}
+@media (min-width: 576px) {
+  #project-grid > .container  {
+    grid-template-columns:repeat(2, 40vw);
+  }
+}
+@media (min-width: 768px) {
+  #project-grid > .container  {
+    grid-template-columns:repeat(3, 30vw);
+  }
+}
+@media (min-width: 992px) {
+  #project-grid > .container  {
+    grid-template-columns:repeat(auto-fill, minmax(18vw, 1fr));
+  }
+}
+@media (min-width: 1200px) {
+  #project-grid > .container  {
+    grid-template-columns:repeat(auto-fill, minmax(18vw, 1fr));
+  }
+}
+
+#project-grid > .container > .zone  {
+  border-radius:8px;
+  border:1px solid #bbb;
+  cursor:pointer;
+  padding:20px;
+}
+
+#project-grid > .container > .zone:hover  {
+    -webkit-transform:rotate(8deg);
+    -moz-transform:rotate(8deg);
+    -o-transform:rotate(8deg);
+  transform:rotate(8deg);
+}
+#project-grid > .container > .zone > img  {
+  width:100%;
+}
+
+
+/*
+ *  Footer section
+ *
+footer  {}
+ */
