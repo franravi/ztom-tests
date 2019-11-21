@@ -1,0 +1,74 @@
+/*
+ *  Startup Event sample (Startup.html).
+ *
+ *  Building a startup landing page.
+ */
+
+body  {
+  /*
+   *  I am centering the background image, and set it to cover the whole screen.
+   */
+  background-color:lightblue;
+  background-image:url("../images/bijagua.jpg");
+  background-position:center center;
+  -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+body,
+html  {
+  width:100%;
+  height:100%;
+  font-family:'Montserrat', sans-serif;
+}
+
+h1  {
+  /*
+   *  I am setting the font using vw, which is viewport width, which is responsive.
+   */
+  font-size:3vw;
+  color:#e9d7b1;
+  text-shadow:2px 2px #625745;
+}
+
+p {
+  color:#e9d7b1;
+  text-shadow:2px 2px #625745;
+}
+
+hr  {
+  border-color:#b48865;
+  border-width:3px;
+  max-width:50px;
+}
+
+/*
+ *  Overridding bootstrap styles to customize our buttons.
+ */
+.btn  {
+  font-weight:700;
+  border-radius: 300px;
+  text-transform: uppercase;
+}
+.btn-primary  {
+  background-color:#ecba79;
+  border-color:#ecba79;
+}
+.btn-primary:hover  {
+  background-color:#b48865;
+  border-color:#b48865;
+  border-width:4px;
+}
+/*
+ *  Adding a custom class for buttons
+ */
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.buffer {
+  height:10rem;
+}

@@ -1,0 +1,55 @@
+/*
+ * Styles for HTML5 Semantics with CSS sample (Semantics.html).
+ *
+ * Quick Guide:
+
+.class                Matches element class.
+#id                   Matches element identifier.
+*                     Matches anything.
+element               Matches single element.
+element, element      Matchese two elements.
+element element       Matches element inside any part of other element.
+element > element     Matches direct child element of element.
+element + element     Matches element directly after element.
+element ~ element     Matches all following elements that matches, directly after element.
+:hover                Matches mouse hovering over element.
+:last-child           Matches last child element of element.
+:first-child          Matches first child element of element.
+:only-child           Matches elements that are the only children of element.
+:nth-child(A)         Matches element at position A of the list of element's children.
+:nth-last-child(A)    Matches element at position A counting from back, of the list of element's children.
+:first-of-type        Matches first element of type.
+:nth-of-type(A)       Matches element of type at position A.
+:only-of-type         Matches elements of certain type within other element.
+:last-of-type         Matches last element of certain type.
+:empty                Matches empty elements.
+:not(X)               Matches elements that do not match the negation selector.
+[attribute]           Matches by attribute (like as [href] ).
+[attribute="value"]   Matches by attribute having value (like as [href="anything"] ).
+[attribute^="value"]  Matches by attribute starting with value (like as [href="any"] ).
+[attribute$="value"]  Matches by attribute ending with value (like as [href="thing"] ).
+[attribute*="value"]  Matches by attribute containing the value (like as [href="yth"] ).
+!important            Gives priority over other matching rules, not recommended.
+
+A can be a number, "odd", "even" (with no quotes), a formula like (An+B).
+An+B as in 6n+2 is every 6th instance counting from second.
+
+Priority:
+- Specificity       More specific will win.
+- Importance        If something uses !important, it wins.
+- Source Order      Inline wins over others.  Then styles in <head> of file.  Lastly CSS files.
+
+ */
+
+h2  {
+  color:red;
+}
+
+header + nav  {
+  padding:4px 8px;
+  color:yellow;
+  background-color:blue;
+}
+header + nav:hover {
+  background-color:yellow;
+}

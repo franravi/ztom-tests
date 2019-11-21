@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Basic HTML Form</title>
+</head>
+<body>
+  <h1>A Basic HTML Form</h1>
+
+  <p><strong>Lorem ipsum</strong> <em>dolor sit amet</em>, consectetur adipiscing elit. Integer in tortor ac nunc egestas feugiat. Duis consequat justo et nunc ultricies, ut porttitor mi pulvinar. Etiam eget nisi vehicula, rutrum purus sed, porttitor lectus. Ut lobortis commodo vulputate. Vivamus vehicula eleifend est, et volutpat dui maximus non. Integer laoreet nisl consectetur lorem sagittis luctus suscipit ac tortor. Aliquam posuere tristique scelerisque. Cras aliquam laoreet dictum. Nulla maximus a sem quis fermentum.</p>
+
+  <form id="myform1" method="POST" action="action.php">
+    <div><label>First Name:</label> <input type="text" name="firstname"></div>
+    <div><label>Last Name:</label> <input type="text" name="lastname"></div>
+    <div><label>Email:</label> <input type="email" name="email" required></div>
+    <div><label>Username:</label> <input type="text" name="user"></div>
+    <div><label>Password:</label> <input type="password" name="password" min="5"></div>
+    <div><label>Birthday:</label> <input type="date" name="birthday"></div>
+    <div>
+      <label>Gender:</label>
+      <input name="gender" type="radio" value="Male">Male
+      <input name="gender" type="radio" value="Female">Female
+      <input name="gender" type="radio" value="Other">Other
+    </div>
+    <div>
+      <label>Social Status:</label>
+      <select name="socialstatus">
+         <option value="single">Single</option>
+         <option value="married">Married</option>
+      <select>
+    </div>
+    <div>
+      <label>Hobbies:</label>
+      <input name="hobby-online-games" type="checkbox">Online Games
+      <input name="hobby-tabletop-games" type="checkbox">Tabletop Games
+      <input name="hobby-sports" type="checkbox">Sports
+    </div>
+    <div>
+      <label>Pets:</label>
+      <select name="pets" multiple>
+         <option value="cat">Cat</option>
+         <option value="dog">Dog</option>
+         <option value="bird">Bird</option>
+         <option value="bird">Hamster</option>
+      <select>
+    </div>
+    <br>
+
+    <div id="myform1-actions">
+      <input type="submit" value="Register!">
+      <input type="reset">
+    </div>
+  </form>
+
+  <hr>
+
+  <h2>Just some other texts</h2>
+
+  <p>Suspendisse malesuada est magna, eget gravida tellus pretium sit amet. Phasellus ipsum felis, pulvinar quis arcu quis, imperdiet finibus arcu. Vivamus auctor sapien vel placerat vestibulum. Aenean lectus tortor, sagittis in metus non, bibendum finibus nulla. Aliquam porta justo vestibulum sem scelerisque, vel posuere quam auctor. Curabitur non mi justo. Ut odio metus, dapibus sit amet ligula vitae, ultrices sollicitudin ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+  <p>Nam fringilla est efficitur pulvinar blandit. Integer fermentum placerat odio, in imperdiet diam. Duis id nunc risus. Integer quis nunc elementum, gravida magna sed, cursus velit. Vestibulum venenatis mi tortor, ut volutpat erat vehicula sit amet. Vivamus eu nunc tellus. Quisque a sem risus. Etiam metus mauris, molestie vel egestas at, vulputate vitae urna. In lectus sapien, ultricies vitae sollicitudin at, accumsan ac nibh. Nullam at finibus erat.</p>
+
+  <p>Curabitur in sagittis odio. In quis odio vel lorem ultrices elementum. Nullam ut rutrum tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tincidunt sodales hendrerit. Nunc gravida massa in fringilla dapibus. Nullam a laoreet quam, sed volutpat est. Fusce ultrices commodo est, sed commodo turpis tincidunt in. Praesent felis ex, consequat ac mi quis, scelerisque imperdiet arcu. Aliquam ultricies orci ac enim blandit mollis.</p>
+
+  <p>Nunc ac mi neque. Pellentesque facilisis, tellus a convallis mattis, nisi leo accumsan magna, et feugiat urna ligula quis nulla. Pellentesque in egestas metus. Pellentesque ornare dui sed magna sollicitudin suscipit. Pellentesque quis nisl malesuada, malesuada diam sed, porttitor sem. Mauris sem elit, porta quis nisi eget, eleifend tempor neque. Cras volutpat luctus accumsan. Duis tempor et arcu nec lobortis. Quisque sed orci eget tortor interdum elementum id eu nibh. Aenean sollicitudin felis quis tellus pharetra, nec faucibus felis sodales. Proin laoreet aliquam placerat. Donec aliquet cursus efficitur. Ut vitae accumsan orci, a placerat sem. Quisque eu tellus lectus. Vivamus ante felis, tristique non felis et, laoreet feugiat purus.</p>
+</body>
+</html>

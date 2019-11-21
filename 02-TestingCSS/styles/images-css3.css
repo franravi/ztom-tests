@@ -1,0 +1,80 @@
+/*
+ *  Images with CSS3 sample (Images CSS3.html).
+ *
+ *  We use flexbox for gallery display using CSS3 as in images.css sample,
+ *  but we will extend with other CSS3 elements.
+ *  These transition CSS3 properties have issues with certain browsers, so
+ *  we need to check support.
+ *
+ *  Source:   https://css-tricks.com/snippets/css/a-guide-to-flexbox
+ *            https://thoughtbot.com/blog/transitions-and-transforms
+ *  Practice:  http://flexboxfroggy.com/
+ *
+ */
+
+h1  {
+  color:red;
+  font-family:"times new roman";
+  font-size:3em;
+  border-bottom:2px solid pink;
+  border-right:2px solid pink;
+  width:400px;
+  text-align:center;
+  margin:20px;
+
+  /*
+   *  CSS3 properties was not fully supported by browsers, so we had
+   *  to use all these prefixes to box-shadow to make them work.  At
+   *  this point, most browsers support it, and the percentage of users
+   *  with older unsupported versions is marginal.
+   */
+  -moz-box-shadow:4px 4px 5px #888888;
+  -ms-box-shadow:4px 4px 5px #888888;
+  -webkit-box-shadow:4px 4px 5px #888888;
+  -o-box-shadow:4px 4px 5px #888888;
+  box-shadow:4px 4px 5px #888888;
+}
+
+.container  {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.container img  {
+  width:300px;
+  height:150px;
+  margin-top:10px;
+  padding:20px;
+  transition:all 1s;
+}
+
+.container img:hover  {
+
+  transform:scale(1.1);
+  
+  /*
+   *  Animation is a CSS3 group of properties.
+   *  We will use an "exampleX" animation defined below in @keyframes.
+   */
+  animation-name:example2;
+  animation-duration:4s;
+}
+
+/*
+ *  Here we specify the styles from start to end of the animation.
+ */
+@keyframes example1  {
+  from  { background-color:red;     }
+  to    { background-color:yellow;  }
+}
+
+/*
+ *  We can also use more stages, based on percentages.
+ */
+@keyframes example2  {
+  0%    { background-color:red;     }
+  18%   { background-color:yellow;  }
+  56%   { background-color:blue;    }
+  100%  { background-color:orange;  }
+}
