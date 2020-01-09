@@ -45,11 +45,38 @@ h2  {
   color:red;
 }
 
+header  {
+  width:1000px;
+  margin:0px auto;
+  padding:4px 8px;
+  background:green;
+}
+
 header + nav  {
+  width:1000px;
+  margin:0px auto;
   padding:4px 8px;
   color:yellow;
-  background-color:blue;
+  background-color:cyan;
 }
 header + nav:hover {
   background-color:yellow;
+}
+
+section {
+  width:800px;
+  margin:10px auto;
+}
+
+section aside {
+  width:300px;
+  float:left;
+  margin:10px 30px 50px 0px;
+}
+
+footer  {
+  width:1000px;
+  margin:50px auto 0px auto;
+  padding:4px 8px;
+  background-color:#009;
 }
