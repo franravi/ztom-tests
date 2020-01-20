@@ -1,0 +1,6 @@
+[submodule "07-React/robofriends1"]
+	path = 07-React/robofriends1
+	url = https://github.com/franravi/robofriends.git
+[submodule "07-React/robofriends2"]
+	path = 07-React/robofriends2
+	url = https://github.com/franravi/robofriends.git
