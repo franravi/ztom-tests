@@ -4,3 +4,6 @@
 [submodule "07-React/robofriends2"]
 	path = 07-React/robofriends2
 	url = https://github.com/franravi/robofriends.git
+[submodule ".\\07-React\\finalproject"]
+	path = .\\07-React\\finalproject
+	url = https://github.com/franravi/ztom-final.git
