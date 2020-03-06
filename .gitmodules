@@ -7,3 +7,9 @@
 [submodule ".\\07-React\\finalproject"]
 	path = .\\07-React\\finalproject
 	url = https://github.com/franravi/ztom-final.git
+[submodule "00-FinalProject\\Backend"]
+	path = 00-FinalProject\\Backend
+	url = https://github.com/franravi/ztom-final-backend.git
+[submodule "00-FinalProject\\Frontend"]
+	path = 00-FinalProject\\Frontend
+	url = https://github.com/franravi/ztom-final.git
